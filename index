@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Hello SeaJS&SPM 2.0</title>
+</head>
+<body>
+<div class="app">
+	<h1>Hello SeaJS&SPM 2.0</h1>
+    <p id="list"></p>
+</div>
+<script type="text/javascript" src="/js/libs/seajs/sea.js" data-config="./js/app/config" data-main="/js/app/build/main"></script>
+</body>
+</html>
