@@ -1,34 +1,34 @@
 define("./js/app/build/main-debug", [ "./a-debug", "jquery-debug", "./b-debug", "./c-debug", "jquery-migrate-debug" ], function(require, exports, module) {
-    var modA = require("./a-debug");
-    var modB = require("./b-debug");
-    modA();
-    modB();
+    var modelA = require("./a-debug");
+    var modelB = require("./b-debug");
+    modelA();
+    modelB();
     require("jquery-migrate-debug");
     $("#list").append("<br>$.migrateMute = " + $.migrateMute);
 });
 
 define("./js/app/build/a-debug", [ "jquery-debug" ], function(require, exports, module) {
     var $ = require("jquery-debug");
-    function modeA(text) {
-        $("<p>mode A load</p>").appendTo("#list");
+    function modelA(text) {
+        $("<p>model A load</p>").appendTo("#list");
     }
-    module.exports = modeA;
+    module.exports = modelA;
 });
 
 define("./js/app/build/b-debug", [ "jquery-debug", "./c-debug" ], function(require, exports, module) {
     var $ = require("jquery-debug");
-    var modC = require("./c-debug");
-    function modeB(text) {
-        $("<p>mode B load</p>").appendTo("#list");
-        modC();
+    var modelC = require("./c-debug");
+    function modelB(text) {
+        $("<p>model B load</p>").appendTo("#list");
+        modelC();
     }
-    module.exports = modeB;
+    module.exports = modelB;
 });
 
 define("./js/app/build/c-debug", [ "jquery-debug" ], function(require, exports, module) {
     var $ = require("jquery-debug");
-    function modeC(text) {
-        $("<p>&nbsp;&nbsp;--mode C load</p>").appendTo("#list");
+    function modelC(text) {
+        $("<p>&nbsp;&nbsp;--model C load</p>").appendTo("#list");
     }
-    module.exports = modeC;
+    module.exports = modelC;
 });

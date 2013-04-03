@@ -1,12 +1,12 @@
 define(function(require, exports, module) {
     var $ = require('jquery');
-    var modC = require("./c");
+    var modelC = require("./c");
     
-    function modeB(text) {
-        $('<p>mode B load</p>').appendTo('#list');
-        modC();
+    function modelB(text) {
+        $('<p>model B load</p>').appendTo('#list');
+        modelC();
     }
 
-    module.exports = modeB;
+    module.exports = modelB;
     
 });

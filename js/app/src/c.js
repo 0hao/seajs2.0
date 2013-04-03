@@ -1,8 +1,8 @@
 define(function(require, exports, module) {
     var $ = require('jquery');
-    function modeC(text) {
-        $('<p>&nbsp;&nbsp;--mode C load</p>').appendTo('#list');
+    function modelC(text) {
+        $('<p>&nbsp;&nbsp;--model C load</p>').appendTo('#list');
     }
 
-    module.exports = modeC;
+    module.exports = modelC;
 });
