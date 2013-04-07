@@ -1,4 +1,4 @@
-seajs2.0
+<a href="https://github.com/seajs/seajs" target="_blank">seajs</a>2.0
 ========
 
 seajs&amp;spm2.0搭建的项目
